@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO META TAGS  -->
+  <title>GetCollege – Discover Colleges, Courses & Exams in India | Compare Top Colleges 2026</title>
+  <meta name="description" content="India's #1 education discovery platform. Explore 50,000+ colleges, 1 lakh+ courses, entrance exams, fees, placements & expert guidance. Compare colleges side-by-side. Find MBA, Engineering, Medical & Law colleges near you." />
+  <meta name="keywords" content="colleges in India, MBA colleges, engineering colleges, NEET 2025, CAT exam, top colleges India, compare colleges, college fees, IIT admissions, IIM MBA, study abroad, college predictor" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://getcollege.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GetCollege – Find Your Dream College & Course in India" />
+  <meta property="og:description" content="Compare 50,000+ colleges, courses, fees and placements. Get expert guidance for MBA, Engineering, Medical and Law admissions." />
+  <meta property="og:url" content="https://getcollege.com/" />
+  <meta property="og:image" content="https://getcollege.com/og-image.jpg" />
+  <meta property="og:site_name" content="GetCollege" />
+  <meta property="og:locale" content="en_IN" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@getcollege" />
+  <meta name="twitter:title" content="GetCollege – India's #1 College Discovery Platform" />
+  <meta name="twitter:description" content="Explore top colleges, compare fees & placements, find entrance exams — all in one place." />
+  <meta name="twitter:image" content="https://getcollege.com/twitter-card.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "GetCollege",
+    "url": "https://getcollege.com",
+    "logo": "https://getcollege.com/logo.png",
+    "description": "India's most trusted education discovery platform",
+    "sameAs": [
+      "https://www.facebook.com/shiksha",
+      "https://twitter.com/shiksha",
+      "https://www.linkedin.com/company/shiksha"
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: WebSite with SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "GetCollege",
+    "url": "https://getcollege.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://getcollege.com/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://getcollege.com" },
+      { "@type": "ListItem", "position": 2, "name": "Colleges", "item": "https://getcollege.com/colleges" },
+      { "@type": "ListItem", "position": 3, "name": "Courses", "item": "https://getcollege.com/courses" }
+    ]
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary:     #1a1464;
+      --accent:      #ff6b35;
+      --accent2:     #ffd60a;
+      --teal:        #00b4d8;
+      --light:       #f8f7ff;
+      --white:       #ffffff;
+      --gray:        #64748b;
+      --gray-light:  #f1f5f9;
+      --shadow-card: 0 4px 24px rgba(26, 20, 100, 0.10);
+      --radius:      16px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--white); color: #1e1e2e; overflow-x: hidden; }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 200;
+      background: var(--primary);
+      height: 64px; padding: 0 40px;
+      display: flex; align-items: center; gap: 32px;
+      box-shadow: 0 2px 20px rgba(26,20,100,0.25);
+    }
+    .logo { font-family:'Syne',sans-serif; font-size:1.6rem; font-weight:800; color:var(--white); text-decoration:none; letter-spacing:-0.5px; flex-shrink:0; display:flex; align-items:center; gap:6px; }
+    .logo span { color: var(--accent); }
+    .logo-dot { display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--accent2); margin-bottom:2px; }
+
+    .nav-search {
+      flex:1; max-width:480px;
+      display:flex; align-items:center; gap:10px;
+      padding:0 16px; border-radius:50px;
+      border:1.5px solid rgba(255,255,255,0.22);
+      background:rgba(255,255,255,0.12);
+      transition:all 0.2s; position:relative;
+    }
+    .nav-search:focus-within { background:rgba(255,255,255,0.2); border-color:var(--accent); }
+    .nav-search input { width:100%; padding:10px 0; background:none; border:none; outline:none; color:var(--white); font-family:'DM Sans',sans-serif; font-size:0.9rem; }
+    .nav-search input::placeholder { color:rgba(255,255,255,0.55); }
+    .nav-search svg { color:rgba(255,255,255,0.6); flex-shrink:0; }
+
+    .nav-links { display:flex; align-items:center; gap:2px; margin-left:auto; }
+    .nav-link { color:rgba(255,255,255,0.85); font-size:0.85rem; font-weight:500; padding:8px 14px; border-radius:8px; cursor:pointer; text-decoration:none; white-space:nowrap; transition:all 0.18s; }
+    .nav-link:hover { background:rgba(255,255,255,0.12); color:#fff; }
+    .nav-link.active { color:var(--accent2); }
+    .nav-btn { padding:8px 20px; border-radius:50px; border:none; cursor:pointer; background:var(--accent); color:#fff; font-size:0.85rem; font-weight:600; white-space:nowrap; transition:all 0.2s; }
+    .nav-btn:hover { background:#ff8255; transform:translateY(-1px); }
+
+    /* SEARCH DROPDOWN */
+    .search-dropdown {
+      position:absolute; top:calc(100% + 8px); left:0; right:0;
+      background:#fff; border-radius:14px;
+      box-shadow:0 12px 40px rgba(26,20,100,0.18);
+      z-index:500; overflow:hidden;
+      max-height:380px; overflow-y:auto;
+      display:none;
+    }
+    .search-dropdown.open { display:block; }
+    .sd-section-label {
+      padding:10px 16px 4px;
+      font-size:0.7rem; font-weight:700; letter-spacing:1px;
+      text-transform:uppercase; color:var(--gray);
+      border-top:1px solid #f0f0f5;
+    }
+    .sd-section-label:first-child { border-top:none; }
+    .sd-item {
+      display:flex; align-items:center; gap:12px;
+      padding:10px 16px; cursor:pointer;
+      transition:background 0.15s;
+    }
+    .sd-item:hover { background:var(--gray-light); }
+    .sd-icon { width:32px; height:32px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0; }
+    .sd-text { flex:1; }
+    .sd-name { font-size:0.88rem; font-weight:600; color:var(--primary); }
+    .sd-meta { font-size:0.75rem; color:var(--gray); margin-top:1px; }
+    .sd-type { font-size:0.72rem; font-weight:700; padding:2px 8px; border-radius:50px; }
+    .sd-type.college { background:#eef6ff; color:#0f4c81; }
+    .sd-type.course  { background:#fff0eb; color:var(--accent); }
+    .sd-type.exam    { background:#e8faf0; color:#059669; }
+    .sd-type.city    { background:#fefce8; color:#a16207; }
+    .sd-empty { padding:20px; text-align:center; color:var(--gray); font-size:0.88rem; }
+
+    /* CATEGORY BAR */
+    .cat-bar { background:var(--white); border-bottom:1.5px solid #e8e8f0; padding:0 40px; display:flex; gap:4px; overflow-x:auto; }
+    .cat-bar::-webkit-scrollbar { display:none; }
+    .cat-item { padding:14px 20px; font-size:0.88rem; font-weight:500; color:var(--gray); cursor:pointer; white-space:nowrap; border-bottom:3px solid transparent; transition:all 0.2s; }
+    .cat-item:hover { color:var(--primary); }
+    .cat-item.active { color:var(--primary); font-weight:600; border-bottom-color:var(--accent); }
+
+    /* HERO */
+    .hero {
+      background:linear-gradient(135deg,#1a1464 0%,#0d0a3e 50%,#1a1464 100%);
+      position:relative; overflow:hidden;
+      padding:70px 40px 80px;
+      display:flex; flex-direction:column; align-items:center; text-align:center;
+    }
+    .hero::before {
+      content:''; position:absolute; inset:0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 0%,  rgba(0,180,216,0.18) 0%,transparent 70%),
+        radial-gradient(ellipse 60% 40% at 80% 80%, rgba(255,107,53,0.15) 0%,transparent 60%),
+        radial-gradient(ellipse 50% 50% at 20% 60%, rgba(255,214,10,0.08) 0%,transparent 60%);
+    }
+    .hero-badge { display:inline-flex; align-items:center; gap:8px; padding:6px 16px; border-radius:50px; border:1px solid rgba(255,214,10,0.35); background:rgba(255,214,10,0.15); color:var(--accent2); font-size:0.8rem; font-weight:600; letter-spacing:0.5px; margin-bottom:24px; position:relative; }
+    .badge-dot { width:6px; height:6px; border-radius:50%; background:var(--accent2); animation:pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+    .hero h1 { font-family:'Syne',sans-serif; font-size:clamp(2.2rem,5vw,3.8rem); font-weight:800; color:var(--white); line-height:1.15; max-width:820px; letter-spacing:-1px; position:relative; }
+    .hero h1 em { font-style:normal; background:linear-gradient(90deg,#ffd60a,#ff6b35); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .hero-sub { color:rgba(255,255,255,0.7); font-size:1.05rem; line-height:1.6; max-width:560px; margin-top:16px; position:relative; }
+
+    /* HERO SEARCH */
+    .hero-search { position:relative; width:100%; max-width:680px; margin-top:36px; }
+    .hero-search-inner { display:flex; gap:0; }
+    .hero-search-select {
+      padding:18px 16px; border:none; outline:none;
+      border-radius:16px 0 0 16px;
+      font-family:'DM Sans',sans-serif; font-size:0.9rem;
+      color:#1e1e2e; background:#fff;
+      border-right:1.5px solid #e8e8f0;
+      cursor:pointer; min-width:140px;
+    }
+    .hero-search-input {
+      flex:1; padding:18px 20px; border:none; outline:none;
+      font-family:'DM Sans',sans-serif; font-size:1rem;
+      color:#1e1e2e; background:#fff;
+      box-shadow:0 8px 40px rgba(0,0,0,0.3);
+    }
+    .hero-search-input::placeholder { color:#aaa; }
+    .hero-search-btn {
+      padding:12px 28px; border:none; border-radius:0 16px 16px 0;
+      cursor:pointer;
+      background:linear-gradient(135deg,var(--accent),#ff8c42);
+      color:#fff; font-family:'Syne',sans-serif;
+      font-size:0.9rem; font-weight:700; transition:all 0.2s;
+      white-space:nowrap;
+    }
+    .hero-search-btn:hover { background:linear-gradient(135deg,#ff5722,#ff6b35); }
+
+    /* Hero search dropdown */
+    .hero-search-dropdown {
+      position:absolute; top:calc(100% + 8px); left:0; right:0;
+      background:#fff; border-radius:14px;
+      box-shadow:0 12px 40px rgba(0,0,0,0.2);
+      z-index:500; overflow:hidden;
+      max-height:400px; overflow-y:auto;
+      display:none;
+    }
+    .hero-search-dropdown.open { display:block; }
+
+    .hero-tags { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:20px; position:relative; }
+    .hero-tag { padding:6px 14px; border-radius:50px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.85); font-size:0.82rem; cursor:pointer; transition:all 0.2s; }
+    .hero-tag:hover { background:rgba(255,255,255,0.18); border-color:rgba(255,255,255,0.4); color:#fff; }
+
+    .hero-stats { display:flex; gap:40px; margin-top:48px; position:relative; }
+    .stat { text-align:center; }
+    .stat-num { font-family:'Syne',sans-serif; font-size:1.9rem; font-weight:800; color:var(--accent2); }
+    .stat-label { font-size:0.82rem; color:rgba(255,255,255,0.6); margin-top:4px; }
+
+    /* SECTION */
+    .section { padding:64px 40px; }
+    .section-alt { background:var(--gray-light); }
+    .section-header { display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:36px; }
+    .section-title { font-family:'Syne',sans-serif; font-size:1.75rem; font-weight:800; color:var(--primary); letter-spacing:-0.5px; }
+    .section-title span { color:var(--accent); }
+    .section-subtitle { font-size:0.9rem; color:var(--gray); margin-top:6px; }
+    .see-all { display:flex; align-items:center; gap:4px; font-size:0.88rem; font-weight:600; color:var(--accent); text-decoration:none; white-space:nowrap; transition:gap 0.2s; cursor:pointer; }
+    .see-all:hover { gap:8px; }
+
+    /* FILTERS BAR */
+    .filters-bar {
+      display:flex; gap:10px; flex-wrap:wrap; margin-bottom:28px; align-items:center;
+    }
+    .filter-btn {
+      padding:7px 16px; border-radius:50px;
+      border:1.5px solid #e0e0ef;
+      background:#fff; color:var(--gray);
+      font-size:0.82rem; font-weight:500; cursor:pointer;
+      transition:all 0.2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      border-color:var(--primary);
+      background:var(--primary); color:#fff;
+    }
+    .filter-select {
+      padding:7px 14px; border-radius:50px;
+      border:1.5px solid #e0e0ef;
+      background:#fff; color:var(--gray);
+      font-size:0.82rem; cursor:pointer; outline:none;
+    }
+
+    /* STREAM GRID */
+    .stream-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:16px; }
+    .stream-card { display:flex; flex-direction:column; align-items:center; gap:12px; padding:24px 20px; border-radius:var(--radius); border:1.5px solid transparent; text-align:center; text-decoration:none; cursor:pointer; transition:all 0.25s; }
+    .stream-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-card); }
+    .stream-icon { width:56px; height:56px; border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:1.6rem; }
+    .stream-name { font-family:'Syne',sans-serif; font-size:0.9rem; font-weight:700; color:var(--primary); }
+    .stream-count { font-size:0.78rem; color:var(--gray); }
+    .s1{background:#fff0eb;border-color:#ffe0d4}.s1 .stream-icon{background:#ffe0d4}
+    .s2{background:#eef6ff;border-color:#d0e8ff}.s2 .stream-icon{background:#d0e8ff}
+    .s3{background:#f0fff4;border-color:#c3f0d0}.s3 .stream-icon{background:#c3f0d0}
+    .s4{background:#fefce8;border-color:#fef08a}.s4 .stream-icon{background:#fef08a}
+    .s5{background:#fdf4ff;border-color:#e9d5ff}.s5 .stream-icon{background:#e9d5ff}
+    .s6{background:#f0f9ff;border-color:#bae6fd}.s6 .stream-icon{background:#bae6fd}
+    .s7{background:#fff7ed;border-color:#fed7aa}.s7 .stream-icon{background:#fed7aa}
+    .s8{background:#fef2f2;border-color:#fecaca}.s8 .stream-icon{background:#fecaca}
+
+    /* COLLEGE GRID */
+    .college-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:20px; }
+    .college-card { display:flex; flex-direction:column; text-decoration:none; color:inherit; background:var(--white); border-radius:var(--radius); border:1.5px solid #e8e8f0; overflow:hidden; cursor:pointer; box-shadow:0 2px 16px rgba(26,20,100,0.07); transition:all 0.25s; position:relative; }
+    .college-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-card); border-color:#c5c2e8; }
+    .college-banner { height:100px; position:relative; overflow:hidden; }
+    .college-logo { position:absolute; bottom:-20px; left:20px; width:56px; height:56px; border-radius:12px; border:3px solid #fff; background:#fff; display:flex; align-items:center; justify-content:center; font-family:'Syne',sans-serif; font-size:1.4rem; font-weight:800; box-shadow:0 4px 12px rgba(0,0,0,0.15); }
+    .college-rating { position:absolute; top:12px; right:12px; padding:4px 10px; border-radius:50px; background:rgba(255,255,255,0.95); backdrop-filter:blur(4px); font-size:0.78rem; font-weight:700; color:#f59e0b; display:flex; align-items:center; gap:4px; }
+    .college-body { flex:1; display:flex; flex-direction:column; padding:30px 20px 20px; }
+    .college-name { font-family:'Syne',sans-serif; font-size:1rem; font-weight:700; color:var(--primary); margin-bottom:4px; }
+    .college-loc { display:flex; align-items:center; gap:4px; font-size:0.82rem; color:var(--gray); }
+    .college-tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:12px; }
+    .ctag { padding:3px 10px; border-radius:50px; background:var(--gray-light); color:var(--gray); font-size:0.75rem; font-weight:500; }
+    .tag-accent { background:#fff0eb; color:var(--accent); font-weight:600; }
+    .tag-teal   { background:#e0f7fd; color:#0077a8; font-weight:600; }
+    .tag-green  { background:#e8faf0; color:#059669; font-weight:600; }
+    .college-footer { padding:12px 20px; border-top:1px solid #f0f0f5; display:flex; align-items:center; justify-content:space-between; }
+    .college-fee { font-size:0.82rem; color:var(--gray); }
+    .college-fee strong { color:var(--primary); font-weight:700; }
+    .cta-btn { padding:6px 16px; border-radius:50px; border:none; cursor:pointer; background:var(--primary); color:#fff; font-size:0.8rem; font-weight:600; transition:all 0.2s; }
+    .cta-btn:hover { background:var(--accent); }
+
+    /* COMPARE CHECKBOX on card */
+    .compare-check-wrap {
+      position:absolute; top:12px; left:12px; z-index:10;
+    }
+    .compare-check {
+      display:flex; align-items:center; gap:5px;
+      padding:4px 10px; border-radius:50px;
+      background:rgba(255,255,255,0.92);
+      border:1.5px solid #e0e0ef;
+      font-size:0.72rem; font-weight:700; cursor:pointer;
+      transition:all 0.2s; user-select:none;
+    }
+    .compare-check.checked {
+      background:var(--primary); color:#fff; border-color:var(--primary);
+    }
+    .compare-check input { display:none; }
+
+    /* COMPARE TRAY */
+    #compare-tray {
+      position:fixed; bottom:0; left:0; right:0; z-index:1000;
+      background:var(--primary);
+      padding:14px 40px;
+      display:none; align-items:center; justify-content:space-between; gap:20px;
+      box-shadow:0 -4px 24px rgba(26,20,100,0.3);
+      animation:slideUp 0.3s ease;
+    }
+    @keyframes slideUp { from{transform:translateY(100%)} to{transform:translateY(0)} }
+    #compare-tray.visible { display:flex; }
+    .tray-colleges { display:flex; gap:12px; align-items:center; flex:1; }
+    .tray-slot {
+      display:flex; align-items:center; gap:8px;
+      padding:8px 14px; border-radius:10px;
+      border:1.5px dashed rgba(255,255,255,0.3);
+      min-width:180px;
+    }
+    .tray-slot.filled { border-style:solid; border-color:rgba(255,255,255,0.5); background:rgba(255,255,255,0.08); }
+    .tray-slot-name { font-size:0.82rem; font-weight:600; color:#fff; }
+    .tray-slot-empty { font-size:0.82rem; color:rgba(255,255,255,0.4); }
+    .tray-remove { cursor:pointer; color:rgba(255,255,255,0.5); font-size:1rem; line-height:1; transition:color 0.2s; }
+    .tray-remove:hover { color:var(--accent); }
+    .tray-actions { display:flex; gap:10px; }
+    .tray-compare-btn { padding:10px 28px; border-radius:50px; border:none; cursor:pointer; background:var(--accent); color:#fff; font-family:'Syne',sans-serif; font-weight:700; font-size:0.9rem; transition:all 0.2s; }
+    .tray-compare-btn:hover { background:#ff8255; transform:scale(1.03); }
+    .tray-compare-btn:disabled { opacity:0.5; cursor:not-allowed; transform:none; }
+    .tray-clear { padding:10px 16px; border-radius:50px; border:1.5px solid rgba(255,255,255,0.25); cursor:pointer; background:transparent; color:rgba(255,255,255,0.7); font-size:0.82rem; transition:all 0.2s; }
+    .tray-clear:hover { border-color:#fff; color:#fff; }
+
+    /* COMPARE MODAL */
+    #compare-modal {
+      display:none; position:fixed; inset:0; z-index:2000;
+      background:rgba(13,10,62,0.7); backdrop-filter:blur(6px);
+      align-items:center; justify-content:center; padding:20px;
+    }
+    #compare-modal.open { display:flex; }
+    .compare-panel {
+      background:#fff; border-radius:24px;
+      max-width:900px; width:100%; max-height:90vh;
+      overflow-y:auto; box-shadow:0 24px 80px rgba(0,0,0,0.35);
+    }
+    .compare-panel-header {
+      padding:24px 32px; border-bottom:1.5px solid #f0f0f5;
+      display:flex; align-items:center; justify-content:space-between;
+      position:sticky; top:0; background:#fff; z-index:10;
+    }
+    .compare-panel-header h2 { font-family:'Syne',sans-serif; font-size:1.3rem; font-weight:800; color:var(--primary); }
+    .modal-close { cursor:pointer; font-size:1.5rem; color:var(--gray); line-height:1; transition:color 0.2s; }
+    .modal-close:hover { color:var(--accent); }
+    .compare-table { width:100%; border-collapse:collapse; }
+    .compare-table th, .compare-table td { padding:14px 20px; text-align:left; border-bottom:1px solid #f0f0f5; vertical-align:top; }
+    .compare-table th { font-family:'Syne',sans-serif; font-size:0.95rem; font-weight:800; color:var(--primary); }
+    .compare-table td { font-size:0.88rem; color:#1e1e2e; }
+    .compare-table tr:nth-child(even) td { background:#f8f7ff; }
+    .compare-table .row-label { font-weight:700; color:var(--gray); font-size:0.82rem; text-transform:uppercase; letter-spacing:0.5px; }
+    .compare-header-col { text-align:center; }
+    .compare-college-emoji { font-size:2rem; display:block; margin-bottom:4px; }
+    .compare-badge { display:inline-flex; padding:3px 10px; border-radius:50px; font-size:0.72rem; font-weight:700; margin-top:4px; }
+    .compare-win { color:#059669; font-weight:700; }
+    .compare-na { color:var(--gray); font-style:italic; }
+
+    /* SEARCH RESULTS PAGE */
+    #search-results-section {
+      display:none; padding:40px;
+    }
+    #search-results-section.visible { display:block; }
+    .results-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:24px; gap:16px; flex-wrap:wrap; }
+    .results-count { font-size:0.88rem; color:var(--gray); }
+    .results-count strong { color:var(--primary); }
+    .result-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:20px; }
+    .no-results { text-align:center; padding:60px 20px; color:var(--gray); }
+    .no-results-emoji { font-size:3rem; margin-bottom:16px; }
+    .no-results h3 { font-family:'Syne',sans-serif; color:var(--primary); margin-bottom:8px; }
+
+    /* EXAM CARDS */
+    .exam-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:16px; }
+    .exam-card { position:relative; overflow:hidden; padding:20px; border-radius:var(--radius); border:1.5px solid #e8e8f0; background:var(--white); cursor:pointer; transition:all 0.25s; }
+    .exam-card:hover { transform:translateY(-3px); box-shadow:var(--shadow-card); }
+    .exam-name { font-family:'Syne',sans-serif; font-size:1.1rem; font-weight:800; color:var(--primary); }
+    .exam-full { font-size:0.78rem; color:var(--gray); margin-top:2px; }
+    .exam-date { display:inline-flex; align-items:center; gap:5px; margin-top:12px; padding:4px 10px; border-radius:50px; font-size:0.78rem; font-weight:500; }
+    .exam-tag { margin-top:10px; font-size:0.75rem; font-weight:600; color:var(--gray); }
+
+    /* ARTICLE CARDS */
+    .article-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:20px; }
+    .article-card { text-decoration:none; color:inherit; background:var(--white); border-radius:var(--radius); border:1.5px solid #e8e8f0; overflow:hidden; cursor:pointer; transition:all 0.25s; }
+    .article-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-card); }
+    .article-img { height:160px; display:flex; align-items:center; justify-content:center; font-size:3rem; position:relative; overflow:hidden; }
+    .article-body { padding:18px; }
+    .article-tag { display:inline-block; padding:3px 10px; border-radius:50px; background:var(--accent); color:#fff; font-size:0.72rem; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:10px; }
+    .article-title { font-family:'Syne',sans-serif; font-size:0.95rem; font-weight:700; line-height:1.4; color:var(--primary); }
+    .article-meta { font-size:0.78rem; color:var(--gray); margin-top:10px; }
+
+    /* PREDICTOR BANNER */
+    .predictor-banner { position:relative; overflow:hidden; display:flex; align-items:center; justify-content:space-between; gap:32px; padding:48px; border-radius:24px; background:linear-gradient(135deg,#1a1464 0%,#312e81 100%); }
+    .predictor-banner::before { content:''; position:absolute; top:-60px; right:-60px; width:300px; height:300px; border-radius:50%; background:radial-gradient(circle,rgba(0,180,216,0.2) 0%,transparent 70%); }
+    .predictor-banner::after { content:''; position:absolute; left:40%; bottom:-40px; width:200px; height:200px; border-radius:50%; background:radial-gradient(circle,rgba(255,107,53,0.15) 0%,transparent 70%); }
+    .pred-left { position:relative; }
+    .pred-label { font-size:0.8rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--teal); margin-bottom:12px; }
+    .pred-title { font-family:'Syne',sans-serif; font-size:2rem; font-weight:800; line-height:1.2; color:#fff; max-width:420px; }
+    .pred-title em { font-style:normal; color:var(--accent2); }
+    .pred-desc { font-size:0.9rem; line-height:1.6; color:rgba(255,255,255,0.7); max-width:400px; margin-top:12px; }
+    .pred-btn { position:relative; margin-top:24px; padding:14px 32px; border:none; border-radius:50px; cursor:pointer; background:linear-gradient(135deg,var(--accent),#ff8c42); color:#fff; font-family:'Syne',sans-serif; font-size:1rem; font-weight:700; white-space:nowrap; box-shadow:0 8px 24px rgba(255,107,53,0.35); transition:all 0.2s; }
+    .pred-btn:hover { transform:scale(1.04); box-shadow:0 12px 32px rgba(255,107,53,0.4); }
+    .pred-right { display:flex; flex-direction:column; gap:16px; position:relative; }
+    .pred-stat { padding:16px 24px; border-radius:14px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.08); backdrop-filter:blur(10px); text-align:center; }
+    .pred-stat-num { font-family:'Syne',sans-serif; font-size:1.5rem; font-weight:800; color:var(--accent2); }
+    .pred-stat-label { font-size:0.78rem; color:rgba(255,255,255,0.6); margin-top:2px; }
+
+    /* FOOTER */
+    footer { background:#0d0a3e; padding:60px 40px 32px; color:rgba(255,255,255,0.7); }
+    .footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; margin-bottom:48px; }
+    .footer-brand .logo { margin-bottom:16px; font-size:1.3rem; }
+    .footer-desc { font-size:0.875rem; line-height:1.7; color:rgba(255,255,255,0.55); max-width:280px; }
+    .footer-social { display:flex; gap:12px; margin-top:20px; }
+    .social-btn { width:36px; height:36px; border-radius:10px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:1rem; color:rgba(255,255,255,0.7); transition:all 0.2s; }
+    .social-btn:hover { background:var(--accent); border-color:var(--accent); color:#fff; }
+    .footer-col h4 { font-family:'Syne',sans-serif; font-size:0.9rem; font-weight:700; letter-spacing:0.5px; color:#fff; margin-bottom:16px; }
+    .footer-link { display:block; padding:4px 0; font-size:0.83rem; color:rgba(255,255,255,0.5); text-decoration:none; cursor:pointer; transition:color 0.2s; }
+    .footer-link:hover { color:var(--accent2); }
+    .footer-bottom { padding-top:24px; border-top:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:space-between; font-size:0.8rem; color:rgba(255,255,255,0.35); }
+
+    /* LOCATION FILTER */
+    .location-chips { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px; }
+    .loc-chip { padding:5px 14px; border-radius:50px; border:1.5px solid #e0e0ef; background:#fff; color:var(--gray); font-size:0.8rem; font-weight:500; cursor:pointer; transition:all 0.2s; }
+    .loc-chip:hover, .loc-chip.active { border-color:var(--teal); background:#e0f7fd; color:#0077a8; }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+    .hero > * { animation:fadeUp 0.6s ease both; }
+    .hero > *:nth-child(1){animation-delay:0.10s}
+    .hero > *:nth-child(2){animation-delay:0.20s}
+    .hero > *:nth-child(3){animation-delay:0.30s}
+    .hero > *:nth-child(4){animation-delay:0.35s}
+    .hero > *:nth-child(5){animation-delay:0.40s}
+    .hero > *:nth-child(6){animation-delay:0.50s}
+
+    /* UTILS */
+    .container { max-width:1280px; margin:0 auto; }
+    ::-webkit-scrollbar{width:6px;height:6px}
+    ::-webkit-scrollbar-track{background:transparent}
+    ::-webkit-scrollbar-thumb{background:#c5c2e8;border-radius:10px}
+
+    /* LOADING SKELETON */
+    .skeleton { background:linear-gradient(90deg,#f0f0f5 25%,#e0e0ef 50%,#f0f0f5 75%); background-size:200% 100%; animation:shimmer 1.5s infinite; border-radius:8px; }
+    @keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+
+    @media(max-width:768px){
+      nav{padding:0 20px;gap:16px}
+      .nav-links{display:none}
+      .section{padding:40px 20px}
+      .cat-bar{padding:0 20px}
+      .hero{padding:48px 20px 56px}
+      .hero-stats{flex-wrap:wrap;justify-content:center;gap:24px}
+      .predictor-banner{flex-direction:column;padding:32px 24px}
+      .pred-right{flex-direction:row}
+      .footer-grid{grid-template-columns:1fr 1fr}
+      #compare-tray{padding:14px 20px}
+      .tray-colleges{flex-wrap:wrap}
+    }
+  </style>
+</head>
+<body>
+
+<!--NAV -->
+<nav>
+  <a class="logo" href="#" onclick="showHome();return false;">
+    <span class="logo-dot"></span>Shik<span>sha</span>
+  </a>
+
+  <div class="nav-search" id="nav-search-wrap">
+    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+    </svg>
+    <input type="text" id="nav-search-input" placeholder="Search colleges, courses, exams..." autocomplete="off" />
+    <div class="search-dropdown" id="nav-dropdown"></div>
+  </div>
+
+  <div class="nav-links">
+    <a class="nav-link active" href="#" onclick="applyStreamFilter('MBA');return false;">MBA</a>
+    <a class="nav-link" href="#" onclick="applyStreamFilter('Engineering');return false;">Engineering</a>
+    <a class="nav-link" href="#" onclick="applyStreamFilter('Medical');return false;">Medical</a>
+    <a class="nav-link" href="#" onclick="applyStreamFilter('Law');return false;">Law</a>
+    <a class="nav-link" href="#" onclick="applyStreamFilter('Design');return false;">Design</a>
+    <a class="nav-link" href="#" onclick="applyStreamFilter('Study Abroad');return false;">Study Abroad</a>
+  </div>
+  <button class="nav-btn">Login / Register</button>
+</nav>
+
+<!-- CATEGORY BAR -->
+<div class="cat-bar" id="cat-bar">
+  <div class="cat-item active" onclick="applyStreamFilter('MBA')">MBA / PGDM</div>
+  <div class="cat-item" onclick="applyStreamFilter('Engineering')">B.Tech / BE</div>
+  <div class="cat-item" onclick="applyStreamFilter('Medical')">MBBS / BDS</div>
+  <div class="cat-item" onclick="applyStreamFilter('Science')">B.Sc</div>
+  <div class="cat-item" onclick="applyStreamFilter('Commerce')">B.Com</div>
+  <div class="cat-item" onclick="applyStreamFilter('Management')">BBA</div>
+  <div class="cat-item" onclick="applyStreamFilter('Arts')">BA</div>
+  <div class="cat-item" onclick="applyStreamFilter('Law')">LLB</div>
+  <div class="cat-item" onclick="applyStreamFilter('Design')">B.Design</div>
+  <div class="cat-item" onclick="applyStreamFilter('Engineering')">M.Tech</div>
+  <div class="cat-item" onclick="applyStreamFilter('Technology')">MCA</div>
+  <div class="cat-item" onclick="applyStreamFilter('Research')">Ph.D</div>
+  <div class="cat-item" onclick="applyStreamFilter('Study Abroad')">Study Abroad</div>
+  <div class="cat-item" onclick="applyStreamFilter('Online')">Online Degrees</div>
+</div>
+
+<!--SEARCH RESULTS SECTION (shown when searching) -->
+<section id="search-results-section">
+  <div class="container">
+    <div class="results-header">
+      <div>
+        <div class="section-title" id="results-title">Search Results</div>
+        <div class="results-count" id="results-count"></div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+        <select class="filter-select" id="sort-select" onchange="applySortFilter()">
+          <option value="rating">Sort: Top Rated</option>
+          <option value="fee-asc">Sort: Fee Low→High</option>
+          <option value="fee-desc">Sort: Fee High→Low</option>
+          <option value="name">Sort: A→Z</option>
+        </select>
+        <button class="filter-btn" onclick="showHome()">✕ Clear Search</button>
+      </div>
+    </div>
+    <div class="location-chips" id="location-chips"></div>
+    <div class="filters-bar" id="type-filters">
+      <button class="filter-btn active" onclick="setTypeFilter('all',this)">All Results</button>
+      <button class="filter-btn" onclick="setTypeFilter('college',this)">🏛️ Colleges</button>
+      <button class="filter-btn" onclick="setTypeFilter('course',this)">📚 Courses</button>
+      <button class="filter-btn" onclick="setTypeFilter('exam',this)">📝 Exams</button>
+    </div>
+
+    <div class="result-grid" id="results-grid"></div>
+  </div>
+</section>
+
+<!-- HOME CONTENT-->
+<div id="home-content">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge"><span class="badge-dot"></span> India's #1 Education Discovery Platform</div>
+    <h1>Find Your <em>Dream College</em>,<br/>Course & Career Path</h1>
+    <p class="hero-sub">Explore 50,000+ colleges, 1 lakh+ courses, entrance exams and expert guidance — all in one place.</p>
+
+    <div class="hero-search">
+      <div class="hero-search-inner">
+        <select class="hero-search-select" id="hero-search-type">
+          <option value="all">All</option>
+          <option value="college">Colleges</option>
+          <option value="course">Courses</option>
+          <option value="exam">Exams</option>
+          <option value="city">By City</option>
+        </select>
+        <input class="hero-search-input" id="hero-search-input" type="text" placeholder="🔍  Try 'MBA colleges in Hyderabad' or 'CAT exam 2025'..." autocomplete="off" />
+        <button class="hero-search-btn" onclick="triggerHeroSearch()">Search</button>
+      </div>
+      <div class="hero-search-dropdown" id="hero-dropdown"></div>
+    </div>
+
+    <div class="hero-tags">
+      <span class="hero-tag" onclick="quickSearch('MBA Colleges')">MBA Colleges</span>
+      <span class="hero-tag" onclick="quickSearch('IIT Admissions')">IIT Admissions</span>
+      <span class="hero-tag" onclick="quickSearch('NEET 2025')">NEET 2025</span>
+      <span class="hero-tag" onclick="quickSearch('CAT Predictor')">CAT Predictor</span>
+      <span class="hero-tag" onclick="quickSearch('Law Schools')">Law Schools</span>
+      <span class="hero-tag" onclick="quickSearch('Study in USA')">Study in USA</span>
+      <span class="hero-tag" onclick="quickSearch('Scholarships')">Scholarships</span>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">50K+</div><div class="stat-label">Colleges Listed</div></div>
+      <div class="stat"><div class="stat-num">1L+</div><div class="stat-label">Courses Available</div></div>
+      <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Entrance Exams</div></div>
+      <div class="stat"><div class="stat-num">3Cr+</div><div class="stat-label">Students Guided</div></div>
+    </div>
+  </section>
+
+  <!-- BROWSE BY STREAM -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Browse by <span>Stream</span></div>
+          <div class="section-subtitle">Find the right path for your future</div>
+        </div>
+        <a class="see-all" href="#">All Streams →</a>
+      </div>
+      <div class="stream-grid">
+        <a class="stream-card s1" onclick="applyStreamFilter('MBA')"><div class="stream-icon">🎓</div><div class="stream-name">MBA / Management</div><div class="stream-count">6,200+ Colleges</div></a>
+        <a class="stream-card s2" onclick="applyStreamFilter('Engineering')"><div class="stream-icon">⚙️</div><div class="stream-name">Engineering</div><div class="stream-count">10,400+ Colleges</div></a>
+        <a class="stream-card s3" onclick="applyStreamFilter('Medical')"><div class="stream-icon">🩺</div><div class="stream-name">Medical</div><div class="stream-count">1,800+ Colleges</div></a>
+        <a class="stream-card s4" onclick="applyStreamFilter('Law')"><div class="stream-icon">⚖️</div><div class="stream-name">Law</div><div class="stream-count">1,200+ Colleges</div></a>
+        <a class="stream-card s5" onclick="applyStreamFilter('Design')"><div class="stream-icon">🎨</div><div class="stream-name">Design</div><div class="stream-count">900+ Colleges</div></a>
+        <a class="stream-card s6" onclick="applyStreamFilter('Study Abroad')"><div class="stream-icon">🌐</div><div class="stream-name">Study Abroad</div><div class="stream-count">5,000+ Universities</div></a>
+        <a class="stream-card s7" onclick="applyStreamFilter('Technology')"><div class="stream-icon">💻</div><div class="stream-name">Computer Science</div><div class="stream-count">4,800+ Colleges</div></a>
+        <a class="stream-card s8" onclick="applyStreamFilter('Commerce')"><div class="stream-icon">🏦</div><div class="stream-name">Commerce</div><div class="stream-count">5,600+ Colleges</div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP COLLEGES -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Top <span>Colleges</span> in India</div>
+          <div class="section-subtitle">Ranked by ratings, placements & infrastructure</div>
+        </div>
+        <a class="see-all" onclick="applyStreamFilter('all')">View All →</a>
+      </div>
+      <div class="college-grid" id="home-college-grid"></div>
+    </div>
+  </section>
+
+  <!-- EXAMS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Upcoming <span>Entrance Exams</span></div>
+          <div class="section-subtitle">Don't miss registration deadlines</div>
+        </div>
+        <a class="see-all" href="#">All Exams →</a>
+      </div>
+      <div class="exam-grid" id="home-exam-grid"></div>
+    </div>
+  </section>
+
+  <!-- PREDICTOR BANNER -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="predictor-banner">
+        <div class="pred-left">
+          <div class="pred-label">🎯 AI-Powered Tool</div>
+          <div class="pred-title">Predict Your <em>College Chances</em> with AI</div>
+          <div class="pred-desc">Enter your CAT / JEE / NEET score and get instant predictions for admission chances across 500+ colleges. Powered by real placement data.</div>
+          <button class="pred-btn">Try College Predictor Free →</button>
+        </div>
+        <div class="pred-right">
+          <div class="pred-stat"><div class="pred-stat-num">95%</div><div class="pred-stat-label">Prediction Accuracy</div></div>
+          <div class="pred-stat"><div class="pred-stat-num">500+</div><div class="pred-stat-label">Colleges Covered</div></div>
+          <div class="pred-stat"><div class="pred-stat-num">2 Min</div><div class="pred-stat-label">Get Results</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Latest <span>Articles & News</span></div>
+          <div class="section-subtitle">Stay updated with admissions, exams & career insights</div>
+        </div>
+        <a class="see-all" href="#">All Articles →</a>
+      </div>
+      <div class="article-grid">
+        <a class="article-card" href="#">
+          <div class="article-img" style="background:linear-gradient(135deg,#1a1464,#312e81)"><span>🎓</span><div style="position:absolute;bottom:12px;left:12px;font-size:0.75rem;color:rgba(255,255,255,0.8);font-weight:500">5 min read</div></div>
+          <div class="article-body"><span class="article-tag">CAT 2025</span><div class="article-title">CAT 2025 Registration Begins: Step-by-Step Guide to Fill Application Form</div><div class="article-meta">By Priya Sharma · Apr 28, 2026</div></div>
+        </a>
+        <a class="article-card" href="#">
+          <div class="article-img" style="background:linear-gradient(135deg,#065f46,#059669)"><span>🩺</span><div style="position:absolute;bottom:12px;left:12px;font-size:0.75rem;color:rgba(255,255,255,0.8);font-weight:500">7 min read</div></div>
+          <div class="article-body"><span class="article-tag" style="background:#059669">NEET 2025</span><div class="article-title">NEET UG 2025 Answer Key Released — How to Challenge Objections</div><div class="article-meta">By Rakesh Nair · Apr 25, 2026</div></div>
+        </a>
+        <a class="article-card" href="#">
+          <div class="article-img" style="background:linear-gradient(135deg,#7c3aed,#a855f7)"><span>🌐</span><div style="position:absolute;bottom:12px;left:12px;font-size:0.75rem;color:rgba(255,255,255,0.8);font-weight:500">10 min read</div></div>
+          <div class="article-body"><span class="article-tag" style="background:#7c3aed">Study Abroad</span><div class="article-title">Top 10 Universities in USA for Indian Students in 2026 — Fees, Scholarships & More</div><div class="article-meta">By Ananya Menon · Apr 20, 2026</div></div>
+        </a>
+        <a class="article-card" href="#">
+          <div class="article-img" style="background:linear-gradient(135deg,#92400e,#f59e0b)"><span>💼</span><div style="position:absolute;bottom:12px;left:12px;font-size:0.75rem;color:rgba(255,255,255,0.8);font-weight:500">6 min read</div></div>
+          <div class="article-body"><span class="article-tag" style="background:#f59e0b;color:#1e1e2e">Placements</span><div class="article-title">IIM Placements 2025: Average Package Touches ₹35 LPA Across Top 6 IIMs</div><div class="article-meta">By Deepak Verma · Apr 18, 2026</div></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- end #home-content -->
+
+<!--FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="#"><span class="logo-dot"></span>Shik<span>sha</span></a>
+        <p class="footer-desc">India's most trusted education discovery platform. Helping students find the right college, course and career path since 2008.</p>
+        <div class="footer-social">
+          <div class="social-btn">f</div><div class="social-btn">in</div><div class="social-btn">𝕏</div><div class="social-btn">▶</div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Streams</h4>
+        <a class="footer-link" href="#">MBA / Management</a>
+        <a class="footer-link" href="#">Engineering</a>
+        <a class="footer-link" href="#">Medical / MBBS</a>
+        <a class="footer-link" href="#">Law</a>
+        <a class="footer-link" href="#">Design</a>
+        <a class="footer-link" href="#">Science</a>
+        <a class="footer-link" href="#">Commerce</a>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a class="footer-link" href="#">College Predictor</a>
+        <a class="footer-link" href="#" onclick="openCompareModal();return false;">Compare Colleges</a>
+        <a class="footer-link" href="#">Exam Calendar</a>
+        <a class="footer-link" href="#">Scholarships</a>
+        <a class="footer-link" href="#">Online Courses</a>
+        <a class="footer-link" href="#">Study Abroad</a>
+        <a class="footer-link" href="#">Write a Review</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a class="footer-link" href="#">About Us</a>
+        <a class="footer-link" href="#">Careers</a>
+        <a class="footer-link" href="#">Advertise</a>
+        <a class="footer-link" href="#">Contact Us</a>
+        <a class="footer-link" href="#">Privacy Policy</a>
+        <a class="footer-link" href="#">Terms of Use</a>
+        <a class="footer-link" href="#">Sitemap</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GetCollege Clone. Educational Platform.</span>
+      <span>Made with ❤️ for students across India</span>
+    </div>
+  </div>
+</footer>
+<div id="compare-tray">
+  <div class="tray-colleges" id="tray-colleges"></div>
+  <div class="tray-actions">
+    <button class="tray-clear" onclick="clearCompare()">Clear All</button>
+    <button class="tray-compare-btn" id="tray-compare-btn" onclick="openCompareModal()">Compare Now →</button>
+  </div>
+</div>
+<div id="compare-modal">
+  <div class="compare-panel">
+    <div class="compare-panel-header">
+      <h2>🏛️ College Comparison</h2>
+      <span class="modal-close" onclick="closeCompareModal()">✕</span>
+    </div>
+    <div style="padding:24px 32px 32px">
+      <div id="compare-table-wrap"></div>
+    </div>
+  </div>
+</div>
+<script>
+
+// IN-MEMORY DATA STORE
+const DB = {
+  colleges: [
+    {
+      id:1, name:'IIM Ahmedabad', short:'IIM-A', emoji:'🎓',
+      stream:'MBA', streams:['MBA','Management'],
+      location:'Ahmedabad', state:'Gujarat', city:'Ahmedabad',
+      rating:4.9, fees:2400000, feesDisplay:'₹24 L/yr',
+      accreditation:'AACSB Accredited', tags:['IIM','MBA/PGDM'],
+      type:'Government', nirf:1,
+      avgPackage:'₹35 LPA', highestPackage:'₹1.5 Cr',
+      seats:400, founded:1961,
+      placement:'100%', infrastructure:5,
+      gradient:'linear-gradient(135deg,#1a1464,#312e81)', logoColor:'#1a1464',
+      tagStyles:['tag-accent','','tag-green'],
+      desc:'Premier management institute, consistently ranked #1 in India for MBA programs.'
+    },
+    {
+      id:2, name:'IIT Bombay', short:'IIT-B', emoji:'⚙️',
+      stream:'Engineering', streams:['Engineering','Technology','Research'],
+      location:'Mumbai', state:'Maharashtra', city:'Mumbai',
+      rating:4.8, fees:220000, feesDisplay:'₹2.2 L/yr',
+      accreditation:'NAAC A++', tags:['IIT','B.Tech'],
+      type:'Government', nirf:2,
+      avgPackage:'₹22 LPA', highestPackage:'₹2.1 Cr',
+      seats:1200, founded:1958,
+      placement:'98%', infrastructure:5,
+      gradient:'linear-gradient(135deg,#0f4c81,#1a7abf)', logoColor:'#0f4c81',
+      tagStyles:['tag-teal','','tag-green'],
+      desc:'India\'s top engineering institution with world-class research and placement record.'
+    },
+    {
+      id:3, name:'AIIMS New Delhi', short:'AIIMS', emoji:'🩺',
+      stream:'Medical', streams:['Medical'],
+      location:'New Delhi', state:'Delhi', city:'Delhi',
+      rating:4.7, fees:1628, feesDisplay:'₹1,628/yr',
+      accreditation:'NAAC A', tags:['MBBS','Government'],
+      type:'Government', nirf:1,
+      avgPackage:'₹18 LPA', highestPackage:'₹80 LPA',
+      seats:107, founded:1956,
+      placement:'100%', infrastructure:5,
+      gradient:'linear-gradient(135deg,#7c3aed,#a855f7)', logoColor:'#7c3aed',
+      tagStyles:['','tag-accent','tag-green'],
+      desc:'India\'s top medical college with subsidised fees and exceptional clinical training.'
+    },
+    {
+      id:4, name:'NLSIU Bangalore', short:'NLS', emoji:'⚖️',
+      stream:'Law', streams:['Law'],
+      location:'Bangalore', state:'Karnataka', city:'Bangalore',
+      rating:4.8, fees:280000, feesDisplay:'₹2.8 L/yr',
+      accreditation:'NAAC A+', tags:['Law','LLB/BA LLB'],
+      type:'Government', nirf:1,
+      avgPackage:'₹14 LPA', highestPackage:'₹40 LPA',
+      seats:80, founded:1987,
+      placement:'95%', infrastructure:4,
+      gradient:'linear-gradient(135deg,#064e3b,#059669)', logoColor:'#064e3b',
+      tagStyles:['tag-teal','','tag-green'],
+      desc:'India\'s premier law school, consistently ranked #1 for law programs.'
+    },
+    {
+      id:5, name:'NID Ahmedabad', short:'NID', emoji:'🎨',
+      stream:'Design', streams:['Design'],
+      location:'Ahmedabad', state:'Gujarat', city:'Ahmedabad',
+      rating:4.7, fees:350000, feesDisplay:'₹3.5 L/yr',
+      accreditation:'Autonomous', tags:['Design','B.Design'],
+      type:'Government', nirf:1,
+      avgPackage:'₹12 LPA', highestPackage:'₹35 LPA',
+      seats:200, founded:1961,
+      placement:'92%', infrastructure:4,
+      gradient:'linear-gradient(135deg,#c2410c,#f97316)', logoColor:'#c2410c',
+      tagStyles:['tag-accent','','tag-green'],
+      desc:'India\'s top design school, training designers for global brands.'
+    },
+    {
+      id:6, name:'IIT Delhi', short:'IIT-D', emoji:'🔬',
+      stream:'Engineering', streams:['Engineering','Technology','Research'],
+      location:'New Delhi', state:'Delhi', city:'Delhi',
+      rating:4.8, fees:200000, feesDisplay:'₹2 L/yr',
+      accreditation:'NAAC A++', tags:['IIT','B.Tech/M.Tech'],
+      type:'Government', nirf:3,
+      avgPackage:'₹20 LPA', highestPackage:'₹1.8 Cr',
+      seats:1000, founded:1961,
+      placement:'97%', infrastructure:5,
+      gradient:'linear-gradient(135deg,#1e3a5f,#2563eb)', logoColor:'#1e3a5f',
+      tagStyles:['tag-teal','','tag-green'],
+      desc:'Premier IIT in the national capital with strong industry connections.'
+    },
+    {
+      id:7, name:'IIM Bangalore', short:'IIM-B', emoji:'📊',
+      stream:'MBA', streams:['MBA','Management'],
+      location:'Bangalore', state:'Karnataka', city:'Bangalore',
+      rating:4.8, fees:2300000, feesDisplay:'₹23 L/yr',
+      accreditation:'EQUIS Accredited', tags:['IIM','MBA/PGDM'],
+      type:'Government', nirf:2,
+      avgPackage:'₹33 LPA', highestPackage:'₹1.2 Cr',
+      seats:480, founded:1973,
+      placement:'100%', infrastructure:5,
+      gradient:'linear-gradient(135deg,#312e81,#6d28d9)', logoColor:'#312e81',
+      tagStyles:['tag-accent','','tag-green'],
+      desc:'The "B School of Excellence" in Bangalore with a strong entrepreneurship ecosystem.'
+    },
+    {
+      id:8, name:'Manipal University', short:'MU', emoji:'🏛️',
+      stream:'Medical', streams:['Medical','Engineering','Management'],
+      location:'Manipal', state:'Karnataka', city:'Manipal',
+      rating:4.3, fees:500000, feesDisplay:'₹5 L/yr',
+      accreditation:'NAAC A+', tags:['MBBS','B.Tech','MBA'],
+      type:'Private', nirf:6,
+      avgPackage:'₹10 LPA', highestPackage:'₹45 LPA',
+      seats:5000, founded:1957,
+      placement:'88%', infrastructure:4,
+      gradient:'linear-gradient(135deg,#7f1d1d,#dc2626)', logoColor:'#7f1d1d',
+      tagStyles:['','','tag-green'],
+      desc:'One of India\'s largest private universities offering 300+ programs across disciplines.'
+    },
+    {
+      id:9, name:'Symbiosis Pune', short:'SCMHRD', emoji:'💼',
+      stream:'MBA', streams:['MBA','Management','Law'],
+      location:'Pune', state:'Maharashtra', city:'Pune',
+      rating:4.4, fees:900000, feesDisplay:'₹9 L/yr',
+      accreditation:'NAAC A', tags:['MBA','BBA','Law'],
+      type:'Private', nirf:15,
+      avgPackage:'₹18 LPA', highestPackage:'₹55 LPA',
+      seats:700, founded:1971,
+      placement:'95%', infrastructure:4,
+      gradient:'linear-gradient(135deg,#0f766e,#14b8a6)', logoColor:'#0f766e',
+      tagStyles:['tag-accent','','tag-green'],
+      desc:'Symbiosis cluster of colleges offering management, law, engineering and design programs.'
+    },
+    {
+      id:10, name:'IIT Madras', short:'IIT-M', emoji:'🧪',
+      stream:'Engineering', streams:['Engineering','Technology','Research'],
+      location:'Chennai', state:'Tamil Nadu', city:'Chennai',
+      rating:4.9, fees:230000, feesDisplay:'₹2.3 L/yr',
+      accreditation:'NAAC A++', tags:['IIT','B.Tech'],
+      type:'Government', nirf:1,
+      avgPackage:'₹21 LPA', highestPackage:'₹2 Cr',
+      seats:1000, founded:1959,
+      placement:'98%', infrastructure:5,
+      gradient:'linear-gradient(135deg,#78350f,#d97706)', logoColor:'#78350f',
+      tagStyles:['tag-teal','','tag-green'],
+      desc:'The #1 ranked engineering institute in India by NIRF for several consecutive years.'
+    },
+    {
+      id:11, name:'VIT Vellore', short:'VIT', emoji:'🔧',
+      stream:'Engineering', streams:['Engineering','Technology'],
+      location:'Vellore', state:'Tamil Nadu', city:'Vellore',
+      rating:4.2, fees:400000, feesDisplay:'₹4 L/yr',
+      accreditation:'NAAC A++', tags:['B.Tech','Private'],
+      type:'Private', nirf:11,
+      avgPackage:'₹8 LPA', highestPackage:'₹80 LPA',
+      seats:10000, founded:1984,
+      placement:'85%', infrastructure:4,
+      gradient:'linear-gradient(135deg,#1d4ed8,#3b82f6)', logoColor:'#1d4ed8',
+      tagStyles:['tag-teal','','tag-green'],
+      desc:'India\'s most popular private engineering college with the highest engineering applications.'
+    },
+    {
+      id:12, name:'Delhi University', short:'DU', emoji:'📚',
+      stream:'Arts', streams:['Arts','Science','Commerce','Law'],
+      location:'New Delhi', state:'Delhi', city:'Delhi',
+      rating:4.5, fees:50000, feesDisplay:'₹50K/yr',
+      accreditation:'NAAC A++', tags:['BA','B.Com','B.Sc'],
+      type:'Government', nirf:12,
+      avgPackage:'₹8 LPA', highestPackage:'₹50 LPA',
+      seats:70000, founded:1922,
+      placement:'80%', infrastructure:4,
+      gradient:'linear-gradient(135deg,#1e1b4b,#4338ca)', logoColor:'#1e1b4b',
+      tagStyles:['','','tag-green'],
+      desc:'One of India\'s oldest and largest universities, home to St. Stephen\'s, Miranda House and more.'
+    }
+  ],
+
+  courses: [
+    { id:101, name:'MBA (Full-time)', type:'course', stream:'MBA', duration:'2 Years', avgFees:'₹8-24 L', exam:'CAT/MAT/XAT', emoji:'🎓', desc:'Master of Business Administration — India\'s most sought-after PG management degree.' },
+    { id:102, name:'B.Tech Computer Science', type:'course', stream:'Engineering', duration:'4 Years', avgFees:'₹1.5-8 L/yr', exam:'JEE Main/Advanced', emoji:'💻', desc:'Bachelor of Technology in Computer Science & Engineering.' },
+    { id:103, name:'MBBS', type:'course', stream:'Medical', duration:'5.5 Years', avgFees:'₹1.6K-15 L/yr', exam:'NEET UG', emoji:'🩺', desc:'Bachelor of Medicine and Bachelor of Surgery — the gateway to a medical career.' },
+    { id:104, name:'LLB / BA LLB', type:'course', stream:'Law', duration:'3/5 Years', avgFees:'₹80K-5 L/yr', exam:'CLAT/AILET', emoji:'⚖️', desc:'Bachelor of Laws — integrated or standalone law program.' },
+    { id:105, name:'B.Design', type:'course', stream:'Design', duration:'4 Years', avgFees:'₹2-8 L/yr', exam:'NID/NIFT/UCEED', emoji:'🎨', desc:'Bachelor of Design from India\'s top design colleges.' },
+    { id:106, name:'BBA', type:'course', stream:'Management', duration:'3 Years', avgFees:'₹1-5 L/yr', exam:'DU JAT/IPM/SET', emoji:'📊', desc:'Bachelor of Business Administration — the undergraduate path to management.' },
+    { id:107, name:'MCA', type:'course', stream:'Technology', duration:'2 Years', avgFees:'₹1-3 L/yr', exam:'NIMCET/State CET', emoji:'🖥️', desc:'Master of Computer Applications for a PG-level tech career.' },
+    { id:108, name:'B.Sc Data Science', type:'course', stream:'Technology', duration:'3 Years', avgFees:'₹1-4 L/yr', exam:'College-specific', emoji:'📈', desc:'A rapidly growing undergraduate course in data analytics and AI.' },
+  ],
+
+  exams: [
+    { id:201, name:'CAT 2025', full:'Common Admission Test', stream:'MBA', date:'Nov 2025', dateStyle:'background:#eef6ff;color:#1d4ed8', barStyle:'linear-gradient(90deg,#1d4ed8,#60a5fa)', cardStyle:'border-color:#dbeafe', tag:'MBA • IIMs & 1000+ colleges', emoji:'📝', desc:'The national-level MBA entrance exam for IIMs and top B-schools.' },
+    { id:202, name:'JEE Main 2025', full:'Joint Entrance Exam (Mains)', stream:'Engineering', date:'Jan & Apr 2025', dateStyle:'background:#fef3c7;color:#92400e', barStyle:'linear-gradient(90deg,#f59e0b,#fcd34d)', cardStyle:'border-color:#fde68a', tag:'B.Tech • NITs, IIITs & 1000+ colleges', emoji:'⚙️', desc:'Gateway to NITs, IIITs and state engineering colleges.' },
+    { id:203, name:'NEET UG 2025', full:'National Eligibility cum Entrance Test', stream:'Medical', date:'May 2025', dateStyle:'background:#dcfce7;color:#166534', barStyle:'linear-gradient(90deg,#16a34a,#4ade80)', cardStyle:'border-color:#bbf7d0', tag:'MBBS/BDS • All Medical Colleges', emoji:'🩺', desc:'The single entrance for all MBBS and BDS admissions in India.' },
+    { id:204, name:'CLAT 2025', full:'Common Law Admission Test', stream:'Law', date:'Dec 2024', dateStyle:'background:#fce7f3;color:#9d174d', barStyle:'linear-gradient(90deg,#be185d,#f472b6)', cardStyle:'border-color:#fbcfe8', tag:'LLB • NLUs across India', emoji:'⚖️', desc:'Entrance exam for National Law Universities across India.' },
+    { id:205, name:'SNAP 2025', full:'Symbiosis National Aptitude Test', stream:'MBA', date:'Dec 2025', dateStyle:'background:#f3f4f6;color:#374151', barStyle:'linear-gradient(90deg,#374151,#6b7280)', cardStyle:'border-color:#e5e7eb', tag:'MBA • Symbiosis Universities', emoji:'📝', desc:'Entrance test for Symbiosis cluster of MBA colleges.' },
+    { id:206, name:'NMAT 2025', full:'NMIMS Management Aptitude Test', stream:'MBA', date:'Oct–Dec 2025', dateStyle:'background:#fdf2f8;color:#be185d', barStyle:'linear-gradient(90deg,#e11d48,#fb7185)', cardStyle:'border-color:#fce7f3', tag:'MBA • NMIMS & 30+ colleges', emoji:'📊', desc:'Computer-based adaptive MBA entrance exam.' },
+  ],
+
+  cities: ['Ahmedabad','Bangalore','Chennai','Delhi','Hyderabad','Kolkata','Mumbai','Pune','Manipal','Vellore']
+};
+
+
+// SEARCH ENGINE
+function searchAll(query, typeFilter='all') {
+  const q = query.toLowerCase().trim();
+  if (!q) return { colleges:[], courses:[], exams:[], cities:[] };
+
+  const colleges = DB.colleges.filter(c => {
+    if (typeFilter !== 'all' && typeFilter !== 'college') return false;
+    return c.name.toLowerCase().includes(q) ||
+           c.short.toLowerCase().includes(q) ||
+           c.location.toLowerCase().includes(q) ||
+           c.state.toLowerCase().includes(q) ||
+           c.streams.some(s => s.toLowerCase().includes(q)) ||
+           c.tags.some(t => t.toLowerCase().includes(q)) ||
+           c.type.toLowerCase().includes(q);
+  });
+
+  const courses = DB.courses.filter(c => {
+    if (typeFilter !== 'all' && typeFilter !== 'course') return false;
+    return c.name.toLowerCase().includes(q) ||
+           c.stream.toLowerCase().includes(q) ||
+           c.exam.toLowerCase().includes(q);
+  });
+
+  const exams = DB.exams.filter(e => {
+    if (typeFilter !== 'all' && typeFilter !== 'exam') return false;
+    return e.name.toLowerCase().includes(q) ||
+           e.full.toLowerCase().includes(q) ||
+           e.stream.toLowerCase().includes(q);
+  });
+
+  const cities = DB.cities.filter(city => city.toLowerCase().includes(q) && typeFilter === 'all');
+
+  return { colleges, courses, exams, cities };
+}
+
+// Location-based college filter
+function filterByCity(city) {
+  return DB.colleges.filter(c => c.city === city || c.location.includes(city) || c.state === city);
+}
+
+// Stream-based college filter
+function applyStreamFilterDB(stream) {
+  if (stream === 'all') return DB.colleges;
+  return DB.colleges.filter(c => c.streams.some(s => s.toLowerCase().includes(stream.toLowerCase())));
+}
+
+// Sort colleges
+function sortColleges(list, sortBy) {
+  const arr = [...list];
+  switch(sortBy) {
+    case 'rating':   return arr.sort((a,b) => b.rating - a.rating);
+    case 'fee-asc':  return arr.sort((a,b) => a.fees - b.fees);
+    case 'fee-desc': return arr.sort((a,b) => b.fees - a.fees);
+    case 'name':     return arr.sort((a,b) => a.name.localeCompare(b.name));
+    default:         return arr;
+  }
+}
+
+
+const compareList = []; // max 3 colleges
+const MAX_COMPARE = 3;
+
+function handleCompareToggle(id, el) {
+  const college = DB.colleges.find(c => c.id === id);
+  if (!college) return;
+  const idx = compareList.findIndex(c => c.id === id);
+  if (idx > -1) {
+    compareList.splice(idx, 1);
+    el.classList.remove('checked');
+    el.innerHTML = '＋ Compare';
+  } else {
+    if (compareList.length >= MAX_COMPARE) {
+      alert(`You can compare up to ${MAX_COMPARE} colleges at a time. Remove one to add another.`);
+      return;
+    }
+    compareList.push(college);
+    el.classList.add('checked');
+    el.innerHTML = '✓ Added';
+  }
+  updateCompareTray();
+}
+
+function updateCompareTray() {
+  const tray = document.getElementById('compare-tray');
+  const slotsEl = document.getElementById('tray-colleges');
+  const btn = document.getElementById('tray-compare-btn');
+
+  if (compareList.length === 0) { tray.classList.remove('visible'); return; }
+  tray.classList.add('visible');
+
+  let slots = '';
+  for (let i = 0; i < MAX_COMPARE; i++) {
+    if (compareList[i]) {
+      slots += `<div class="tray-slot filled">
+        <span style="font-size:1.2rem">${compareList[i].emoji}</span>
+        <span class="tray-slot-name">${compareList[i].name}</span>
+        <span class="tray-remove" onclick="removeTrayItem(${i})">✕</span>
+      </div>`;
+    } else {
+      slots += `<div class="tray-slot"><span class="tray-slot-empty">+ Add a college</span></div>`;
+    }
+  }
+  slotsEl.innerHTML = slots;
+  btn.disabled = compareList.length < 2;
+  btn.textContent = compareList.length < 2 ? `Add ${2-compareList.length} more to compare` : 'Compare Now →';
+}
+
+function removeTrayItem(idx) {
+  const removed = compareList[idx];
+  compareList.splice(idx, 1);
+  document.querySelectorAll(`.compare-check[data-id="${removed.id}"]`).forEach(el => {
+    el.classList.remove('checked');
+    el.innerHTML = '＋ Compare';
+  });
+  updateCompareTray();
+}
+
+function clearCompare() {
+  compareList.length = 0;
+  document.querySelectorAll('.compare-check').forEach(el => {
+    el.classList.remove('checked');
+    el.innerHTML = '＋ Compare';
+  });
+  updateCompareTray();
+}
+
+function openCompareModal() {
+  if (compareList.length < 2) return;
+  renderCompareTable();
+  document.getElementById('compare-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCompareModal() {
+  document.getElementById('compare-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function renderCompareTable() {
+  const cols = compareList;
+  const rows = [
+    { label:'Rating', key: c => `⭐ ${c.rating}/5.0`, win: cols => cols.reduce((a,b) => a.rating > b.rating ? a : b).id },
+    { label:'Fees/yr', key: c => c.feesDisplay, win: cols => cols.reduce((a,b) => a.fees < b.fees ? a : b).id },
+    { label:'Avg Package', key: c => c.avgPackage, win: null },
+    { label:'Highest Package', key: c => c.highestPackage, win: null },
+    { label:'Placement %', key: c => c.placement, win: cols => cols.reduce((a,b) => parseInt(a.placement) > parseInt(b.placement) ? a : b).id },
+    { label:'NIRF Rank', key: c => `#${c.nirf} (in stream)`, win: cols => cols.reduce((a,b) => a.nirf < b.nirf ? a : b).id },
+    { label:'Type', key: c => c.type, win: null },
+    { label:'Accreditation', key: c => c.accreditation, win: null },
+    { label:'Total Seats', key: c => c.seats.toLocaleString(), win: null },
+    { label:'Founded', key: c => c.founded, win: null },
+    { label:'Location', key: c => c.location, win: null },
+    { label:'Stream', key: c => c.stream, win: null },
+  ];
+
+  let html = `<table class="compare-table">
+    <thead><tr>
+      <th style="width:130px">Parameter</th>
+      ${cols.map(c => `<th class="compare-header-col">
+        <span class="compare-college-emoji">${c.emoji}</span>
+        ${c.name}
+        <div style="font-size:0.75rem;font-weight:500;color:var(--gray);margin-top:4px">${c.location}</div>
+      </th>`).join('')}
+    </tr></thead>
+    <tbody>
+      ${rows.map(row => {
+        const winId = row.win ? row.win(cols) : null;
+        return `<tr>
+          <td class="row-label">${row.label}</td>
+          ${cols.map(c => {
+            const val = row.key(c);
+            const isWin = winId && c.id === winId;
+            return `<td>${isWin ? `<span class="compare-win">✓ ${val}</span>` : val}</td>`;
+          }).join('')}
+        </tr>`;
+      }).join('')}
+    </tbody>
+  </table>
+  <div style="margin-top:20px;padding:16px;background:var(--gray-light);border-radius:12px;font-size:0.82rem;color:var(--gray)">
+    ✓ <strong style="color:var(--primary)">Green checkmarks</strong> indicate the best value in that category.
+  </div>`;
+
+  document.getElementById('compare-table-wrap').innerHTML = html;
+}
+
+function buildCollegeTile(college) {
+  const isInCompare = compareList.some(c => c.id === college.id);
+  return `
+    <div class="college-card" style="opacity:0;transform:translateY(20px);transition:opacity 0.5s,transform 0.5s">
+      <div class="college-banner" style="background:${college.gradient}">
+        <div class="college-logo" style="color:${college.logoColor}">${college.short}</div>
+        <div class="college-rating">⭐ ${college.rating}</div>
+        <div class="compare-check-wrap">
+          <div class="compare-check ${isInCompare?'checked':''}" data-id="${college.id}"
+               onclick="handleCompareToggle(${college.id},this)">
+            ${isInCompare ? '✓ Added' : '＋ Compare'}
+          </div>
+        </div>
+      </div>
+      <div class="college-body">
+        <div class="college-name">${college.name}</div>
+        <div class="college-loc">
+          <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          ${college.location}, ${college.state}
+        </div>
+        <div class="college-tags">
+          ${college.tags.map((t,i) => `<span class="ctag ${college.tagStyles[i]||''}">${t}</span>`).join('')}
+          <span class="ctag">${college.accreditation}</span>
+        </div>
+        <div style="font-size:0.78rem;color:var(--gray);margin-top:10px;line-height:1.5">${college.desc}</div>
+      </div>
+      <div class="college-footer">
+        <div class="college-fee">Fees: <strong>${college.feesDisplay}</strong> &nbsp;|&nbsp; Avg: <strong>${college.avgPackage}</strong></div>
+        <button class="cta-btn">Apply Now</button>
+      </div>
+    </div>`;
+}
+
+function renderCourseCard(course) {
+  return `
+    <div class="college-card" style="opacity:0;transform:translateY(20px);transition:opacity 0.5s,transform 0.5s">
+      <div class="college-banner" style="background:linear-gradient(135deg,#1a1464,#312e81)">
+        <div class="college-logo" style="color:#1a1464;font-size:2rem">${course.emoji}</div>
+        <div class="college-rating" style="background:rgba(255,214,10,0.9);color:#1a1464">📚 Course</div>
+      </div>
+      <div class="college-body">
+        <div class="college-name">${course.name}</div>
+        <div class="college-loc">⏱️ Duration: ${course.duration}</div>
+        <div class="college-tags">
+          <span class="ctag tag-accent">${course.stream}</span>
+          <span class="ctag">Exam: ${course.exam}</span>
+        </div>
+        <div style="font-size:0.78rem;color:var(--gray);margin-top:10px;line-height:1.5">${course.desc}</div>
+      </div>
+      <div class="college-footer">
+        <div class="college-fee">Avg Fees: <strong>${course.avgFees}</strong></div>
+        <button class="cta-btn">Explore</button>
+      </div>
+    </div>`;
+}
+
+function renderExamCard(exam, full=false) {
+  if (!full) {
+    return `
+      <div class="exam-card" style="${exam.cardStyle};opacity:0;transform:translateY(20px);transition:opacity 0.5s,transform 0.5s">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;border-radius:16px 16px 0 0;background:${exam.barStyle}"></div>
+        <div class="exam-name">${exam.name}</div>
+        <div class="exam-full">${exam.full}</div>
+        <div class="exam-date" style="${exam.dateStyle}">📅 ${exam.date}</div>
+        <div class="exam-tag">${exam.tag}</div>
+      </div>`;
+  }
+  return `
+    <div class="college-card" style="opacity:0;transform:translateY(20px);transition:opacity 0.5s,transform 0.5s">
+      <div class="college-banner" style="background:linear-gradient(135deg,#065f46,#059669)">
+        <div class="college-logo" style="color:#065f46;font-size:2rem">${exam.emoji}</div>
+        <div class="college-rating" style="background:rgba(255,255,255,0.9);color:#065f46">📝 Exam</div>
+      </div>
+      <div class="college-body">
+        <div class="college-name">${exam.name}</div>
+        <div class="college-loc">${exam.full}</div>
+        <div class="college-tags">
+          <span class="ctag tag-green">${exam.stream}</span>
+          <span class="ctag">📅 ${exam.date}</span>
+        </div>
+        <div style="font-size:0.78rem;color:var(--gray);margin-top:10px;line-height:1.5">${exam.desc}</div>
+      </div>
+      <div class="college-footer">
+        <div class="college-fee">${exam.tag}</div>
+        <button class="cta-btn">Details</button>
+      </div>
+    </div>`;
+}
+
+// Animate cards
+function animateCards(container) {
+  setTimeout(() => {
+    container.querySelectorAll('[style*="opacity:0"]').forEach((el, i) => {
+      setTimeout(() => {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      }, i * 60);
+    });
+  }, 50);
+}
+
+
+let currentSearchQuery = '';
+let currentTypeFilter = 'all';
+let currentCityFilter = '';
+let currentResults = { colleges:[], courses:[], exams:[], cities:[] };
+
+
+function renderDropdown(container, results, query) {
+  let html = '';
+  const { colleges, courses, exams, cities } = results;
+  const total = colleges.length + courses.length + exams.length + cities.length;
+
+  if (!query || total === 0) {
+    if (query) html = `<div class="sd-empty">No results found for "<strong>${query}</strong>"</div>`;
+    else {
+
+      html = `<div class="sd-section-label">Popular Searches</div>
+        ${['MBA Colleges in Delhi','Top Engineering Colleges','NEET 2025 Exam','IIM Ahmedabad MBA','Study in USA'].map(s =>
+          `<div class="sd-item" onclick="quickSearch('${s}')">
+            <div class="sd-icon" style="background:#eef6ff">🔍</div>
+            <div class="sd-text"><div class="sd-name">${s}</div></div>
+          </div>`).join('')}`;
+    }
+    container.innerHTML = html;
+    container.classList.toggle('open', !!query || document.activeElement === container.previousElementSibling);
+    return;
+  }
+
+  if (cities.length) {
+    html += `<div class="sd-section-label">📍 Locations</div>` +
+      cities.slice(0,3).map(city => `
+        <div class="sd-item" onclick="filterByCity('${city}')">
+          <div class="sd-icon" style="background:#fefce8">📍</div>
+          <div class="sd-text"><div class="sd-name">Colleges in ${city}</div><div class="sd-meta">Browse by location</div></div>
+          <span class="sd-type city">City</span>
+        </div>`).join('');
+  }
+
+  if (colleges.length) {
+    html += `<div class="sd-section-label">🏛️ Colleges (${colleges.length})</div>` +
+      colleges.slice(0,4).map(c => `
+        <div class="sd-item" onclick="quickSearch('${c.name}')">
+          <div class="sd-icon" style="background:#eef6ff">${c.emoji}</div>
+          <div class="sd-text"><div class="sd-name">${c.name}</div><div class="sd-meta">${c.location} • ${c.stream} • ${c.feesDisplay}</div></div>
+          <span class="sd-type college">College</span>
+        </div>`).join('');
+  }
+
+  if (courses.length) {
+    html += `<div class="sd-section-label">📚 Courses (${courses.length})</div>` +
+      courses.slice(0,3).map(c => `
+        <div class="sd-item" onclick="quickSearch('${c.name}')">
+          <div class="sd-icon" style="background:#fff0eb">${c.emoji}</div>
+          <div class="sd-text"><div class="sd-name">${c.name}</div><div class="sd-meta">${c.duration} • Exam: ${c.exam}</div></div>
+          <span class="sd-type course">Course</span>
+        </div>`).join('');
+  }
+
+  if (exams.length) {
+    html += `<div class="sd-section-label">📝 Exams (${exams.length})</div>` +
+      exams.slice(0,3).map(e => `
+        <div class="sd-item" onclick="quickSearch('${e.name}')">
+          <div class="sd-icon" style="background:#e8faf0">${e.emoji}</div>
+          <div class="sd-text"><div class="sd-name">${e.name}</div><div class="sd-meta">${e.full} • ${e.date}</div></div>
+          <span class="sd-type exam">Exam</span>
+        </div>`).join('');
+  }
+
+  container.innerHTML = html;
+  container.classList.add('open');
+}
+
+// Main search trigger
+function triggerSearch(query, typeFilter='all') {
+  if (!query.trim()) { showHome(); return; }
+  currentSearchQuery = query;
+  currentTypeFilter = typeFilter;
+  currentCityFilter = '';
+
+
+  document.title = `"${query}" – Colleges, Courses & Exams | GetCollege`;
+
+  const results = searchAll(query, typeFilter);
+  currentResults = results;
+
+  showResultsSection(results, query);
+  
+  document.getElementById('nav-dropdown').classList.remove('open');
+  document.getElementById('hero-dropdown').classList.remove('open');
+}
+
+function showResultsSection(results, query) {
+  document.getElementById('home-content').style.display = 'none';
+  document.getElementById('search-results-section').classList.add('visible');
+
+  const { colleges, courses, exams } = results;
+  const total = colleges.length + courses.length + exams.length;
+
+  document.getElementById('results-title').textContent = `Results for "${query}"`;
+  document.getElementById('results-count').innerHTML = `Found <strong>${total}</strong> result${total !== 1 ? 's' : ''} across colleges, courses and exams`;
+
+  // Location chips
+  const uniqueCities = [...new Set(colleges.map(c => c.city))];
+  const locChips = document.getElementById('location-chips');
+  if (uniqueCities.length > 1) {
+    locChips.innerHTML = '<span style="font-size:0.78rem;font-weight:600;color:var(--gray);align-self:center">Filter by city:</span>' +
+      uniqueCities.map(city => `<span class="loc-chip" onclick="setCityFilter('${city}',this)">${city}</span>`).join('');
+    locChips.style.display = 'flex';
+  } else {
+    locChips.style.display = 'none';
+  }
+
+  renderResultGrid(colleges, courses, exams);
+}
+
+function renderResultGrid(colleges, courses, exams) {
+  const grid = document.getElementById('results-grid');
+  if (colleges.length === 0 && courses.length === 0 && exams.length === 0) {
+    grid.innerHTML = `<div class="no-results" style="grid-column:1/-1">
+      <div class="no-results-emoji">🔍</div>
+      <h3>No results found</h3>
+      <p>Try a different keyword, stream or location</p>
+    </div>`;
+    return;
+  }
+  grid.innerHTML =
+    colleges.map(c => buildCollegeTile(c)).join('') +
+    courses.map(c => renderCourseCard(c)).join('') +
+    exams.map(e => renderExamCard(e, true)).join('');
+  animateCards(grid);
+}
+
+function setCityFilter(city, el) {
+  document.querySelectorAll('.loc-chip').forEach(c => c.classList.remove('active'));
+  if (currentCityFilter === city) {
+    currentCityFilter = '';
+    applyFilters();
+    return;
+  }
+  el.classList.add('active');
+  currentCityFilter = city;
+  applyFilters();
+}
+
+function setTypeFilter(type, el) {
+  currentTypeFilter = type;
+  document.querySelectorAll('#type-filters .filter-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  applyFilters();
+}
+
+function applySortFilter() {
+  applyFilters();
+}
+
+function applyFilters() {
+  let colleges = searchAll(currentSearchQuery, 'all').colleges;
+  let courses  = searchAll(currentSearchQuery, 'all').courses;
+  let exams    = searchAll(currentSearchQuery, 'all').exams;
+
+  if (currentCityFilter) {
+    colleges = colleges.filter(c => c.city === currentCityFilter);
+  }
+
+  if (currentTypeFilter !== 'all') {
+    if (currentTypeFilter !== 'college') colleges = [];
+    if (currentTypeFilter !== 'course')  courses = [];
+    if (currentTypeFilter !== 'exam')    exams = [];
+  }
+
+  const sortBy = document.getElementById('sort-select').value;
+  colleges = sortColleges(colleges, sortBy);
+
+  const total = colleges.length + courses.length + exams.length;
+  document.getElementById('results-count').innerHTML = `Found <strong>${total}</strong> result${total !== 1 ? 's' : ''}`;
+  renderResultGrid(colleges, courses, exams);
+}
+
+function applyStreamFilter(stream) {
+  document.querySelectorAll('.cat-item').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));
+
+  if (stream === 'all') {
+    currentSearchQuery = '';
+    const results = { colleges: DB.colleges, courses: DB.courses, exams: [], cities: [] };
+    document.title = 'All Colleges & Courses | GetCollege';
+    document.getElementById('home-content').style.display = 'none';
+    document.getElementById('search-results-section').classList.add('visible');
+    document.getElementById('results-title').textContent = 'All Colleges';
+    document.getElementById('results-count').innerHTML = `Showing <strong>${DB.colleges.length}</strong> colleges`;
+    document.getElementById('location-chips').style.display = 'none';
+    renderResultGrid(sortColleges(DB.colleges, 'rating'), DB.courses, []);
+  } else {
+    currentSearchQuery = stream;
+    triggerSearch(stream, 'all');
+   
+    document.querySelectorAll('.nav-link').forEach(el => {
+      if (el.textContent.trim().toLowerCase().includes(stream.toLowerCase())) el.classList.add('active');
+    });
+  }
+
+  document.getElementById('nav-search-input').value = stream !== 'all' ? stream : '';
+  document.getElementById('hero-search-input').value = stream !== 'all' ? stream : '';
+}
+
+function filterByCity(city) {
+  currentSearchQuery = city;
+  document.getElementById('nav-search-input').value = `Colleges in ${city}`;
+  document.getElementById('hero-search-input').value = `Colleges in ${city}`;
+
+  const colleges = filterByCity(city);
+  document.title = `Best Colleges in ${city} | GetCollege`;
+  document.getElementById('home-content').style.display = 'none';
+  document.getElementById('search-results-section').classList.add('visible');
+  document.getElementById('results-title').textContent = `Colleges in ${city}`;
+  document.getElementById('results-count').innerHTML = `Found <strong>${colleges.length}</strong> college${colleges.length !== 1 ? 's' : ''} in ${city}`;
+  document.getElementById('location-chips').style.display = 'none';
+  document.getElementById('type-filters').querySelectorAll('.filter-btn').forEach((b,i) => {
+    b.classList.toggle('active', i === 0);
+  });
+  renderResultGrid(colleges, [], []);
+  document.getElementById('nav-dropdown').classList.remove('open');
+  document.getElementById('hero-dropdown').classList.remove('open');
+}
+
+function quickSearch(query) {
+  document.getElementById('nav-search-input').value = query;
+  document.getElementById('hero-search-input').value = query;
+  triggerSearch(query, 'all');
+}
+
+function triggerHeroSearch() {
+  const q = document.getElementById('hero-search-input').value;
+  const type = document.getElementById('hero-search-type').value;
+  triggerSearch(q, type);
+}
+
+function showHome() {
+  document.getElementById('home-content').style.display = 'block';
+  document.getElementById('search-results-section').classList.remove('visible');
+  document.getElementById('nav-search-input').value = '';
+  document.getElementById('hero-search-input').value = '';
+  document.title = 'GetCollege – Discover Colleges, Courses & Exams in India | Compare Top Colleges 2026';
+}
+
+function initHome() {
+  const collegeGrid = document.getElementById('home-college-grid');
+  const topColleges = sortColleges(DB.colleges, 'rating').slice(0, 6);
+  collegeGrid.innerHTML = topColleges.map(c => buildCollegeTile(c)).join('');
+  animateCards(collegeGrid);
+
+  const examGrid = document.getElementById('home-exam-grid');
+  examGrid.innerHTML = DB.exams.map(e => renderExamCard(e, false)).join('');
+  animateCards(examGrid);
+}
+
+let debounceTimer;
+function setupSearch(inputEl, dropdownEl, isHero=false) {
+  inputEl.addEventListener('input', () => {
+    clearTimeout(debounceTimer);
+    const q = inputEl.value.trim();
+    debounceTimer = setTimeout(() => {
+      const typeFilter = isHero ? document.getElementById('hero-search-type').value : 'all';
+      const results = searchAll(q, typeFilter);
+      renderDropdown(dropdownEl, results, q);
+    }, 150);
+  });
+
+  inputEl.addEventListener('focus', () => {
+    const q = inputEl.value.trim();
+    const results = searchAll(q, 'all');
+    renderDropdown(dropdownEl, results, q);
+    dropdownEl.classList.add('open');
+  });
+
+  inputEl.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+      const typeFilter = isHero ? document.getElementById('hero-search-type').value : 'all';
+      triggerSearch(inputEl.value, typeFilter);
+    }
+  });
+}
+
+document.addEventListener('click', e => {
+  if (!e.target.closest('#nav-search-wrap')) {
+    document.getElementById('nav-dropdown').classList.remove('open');
+  }
+  if (!e.target.closest('.hero-search')) {
+    document.getElementById('hero-dropdown').classList.remove('open');
+  }
+  if (e.target === document.getElementById('compare-modal')) {
+    closeCompareModal();
+  }
+  
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeCompareModal();
+});
+
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+function observeCards() {
+  document.querySelectorAll('.stream-card, .article-card, .exam-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    revealObserver.observe(el);
+  });
+}
+
+document.querySelectorAll('.cat-item').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelectorAll('.cat-item').forEach(i => i.classList.remove('active'));
+    item.classList.add('active');
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  initHome();
+  setupSearch(document.getElementById('nav-search-input'), document.getElementById('nav-dropdown'), false);
+  setupSearch(document.getElementById('hero-search-input'), document.getElementById('hero-dropdown'), true);
+  setTimeout(observeCards, 200);
+});
+</script>
+
+
+<!-- AUTH MODAL -->
+<div id="auth-modal" style="display:none; position:fixed; inset:0; z-index:3000; background:rgba(13,10,62,0.75); backdrop-filter:blur(8px); align-items:center; justify-content:center;">
+
+  <div style="width:100%; max-width:420px; background:#ffffff; border-radius:24px; padding:32px; box-shadow:0 30px 80px rgba(0,0,0,0.35); position:relative; font-family:'DM Sans'; animation:fadeUp 0.3s ease;">
+
+    <!-- Close -->
+    <span onclick="closeAuthModal()" style="position:absolute; top:16px; right:20px; cursor:pointer; font-size:1.5rem; color:#999;">✕</span>
+
+    <!-- Header -->
+    <h2 id="auth-title" style="font-family:'Syne'; font-weight:800; color:#1a1464; margin-bottom:6px;">Login</h2>
+    <p style="font-size:0.85rem; color:#64748b; margin-bottom:20px;">Access your account to explore colleges</p>
+
+    <!-- Inputs -->
+    <div style="display:flex; flex-direction:column; gap:14px;">
+
+      <input id="auth-name" placeholder="Full Name" style="display:none; padding:14px; border-radius:12px; border:1.5px solid #e0e0ef; outline:none;">
+
+      <input id="auth-email" placeholder="Email Address" style="padding:14px; border-radius:12px; border:1.5px solid #e0e0ef; outline:none;">
+
+      <input id="auth-password" type="password" placeholder="Password" style="padding:14px; border-radius:12px; border:1.5px solid #e0e0ef; outline:none;">
+
+      <button onclick="submitAuth()" style="margin-top:10px; padding:14px; border:none; border-radius:50px; background:linear-gradient(135deg,#ff6b35,#ff8c42); color:#fff; font-weight:700; cursor:pointer;">
+        Continue →
+      </button>
+    </div>
+
+    <!-- Switch -->
+    <p style="font-size:0.85rem; color:#64748b; margin-top:18px; text-align:center;">
+      <span id="auth-switch-text">Don't have an account?</span>
+      <span onclick="toggleAuthMode()" style="color:#ff6b35; font-weight:600; cursor:pointer;"> Sign up</span>
+    </p>
+
+  </div>
+</div>
+
+<script>
+//  AUTH MODAL LOGIC 
+
+let authMode = "login";
+
+document.querySelector(".nav-btn").addEventListener("click", () => {
+  document.getElementById("auth-modal").style.display = "flex";
+});
+
+function closeAuthModal() {
+  document.getElementById("auth-modal").style.display = "none";
+}
+
+function toggleAuthMode() {
+  authMode = authMode === "login" ? "signup" : "login";
+
+  document.getElementById("auth-title").innerText =
+    authMode === "login" ? "Login" : "Create Account";
+
+  document.getElementById("auth-name").style.display =
+    authMode === "signup" ? "block" : "none";
+
+  document.getElementById("auth-switch-text").innerText =
+    authMode === "login"
+      ? "Don't have an account?"
+      : "Already have an account?";
+}
+
+function submitAuth() {
+  const name = document.getElementById("auth-name").value;
+  const email = document.getElementById("auth-email").value;
+  const password = document.getElementById("auth-password").value;
+
+  const url =
+    authMode === "login"
+      ? "http://localhost:5000/login"
+      : "http://localhost:5000/signup";
+
+  const payload =
+    authMode === "login"
+      ? { email, password }
+      : { name, email, password };
+
+  fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  })
+    .then(res => res.json())
+    .then(data => {
+      alert(data.message);
+      if (data.success) {
+        localStorage.setItem("user", JSON.stringify(data.user || { name }));
+        closeAuthModal();
+        document.querySelector(".nav-btn").innerText = "Hi, " + (data.user?.name || name);
+      }
+    });
+}
+</script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const passwordInput = document.querySelector('input[type="password"]');
+  const loginBtn = document.querySelector('.nav-btn');
+
+  if (passwordInput) {
+    const toggle = document.createElement("span");
+    toggle.innerHTML = "👁️";
+    toggle.style.cursor = "pointer";
+    toggle.style.marginLeft = "8px";
+    passwordInput.parentNode.appendChild(toggle);
+
+    toggle.addEventListener("click", () => {
+      passwordInput.type =
+        passwordInput.type === "password" ? "text" : "password";
+    });
+  }
+
+  function showError(input, message) {
+    let error = input.parentNode.querySelector(".error-msg");
+    if (!error) {
+      error = document.createElement("div");
+      error.className = "error-msg";
+      error.style.color = "red";
+      error.style.fontSize = "12px";
+      error.style.marginTop = "4px";
+      input.parentNode.appendChild(error);
+    }
+    error.textContent = message;
+  }
+
+  function clearError(input) {
+    const error = input.parentNode.querySelector(".error-msg");
+    if (error) error.remove();
+  }
+  if (loginBtn) {
+    loginBtn.addEventListener("click", async () => {
+
+      const email = document.querySelector('input[type="email"]');
+      const password = document.querySelector('input[type="password"]');
+
+      let valid = true;
+
+      if (!email || email.value.trim() === "") {
+        showError(email, "Email is required");
+        valid = false;
+      } else {
+        clearError(email);
+      }
+
+      if (!password || password.value.trim() === "") {
+        showError(password, "Password is required");
+        valid = false;
+      } else {
+        clearError(password);
+      }
+
+      if (!valid) return;
+
+      loginBtn.disabled = true;
+      const originalText = loginBtn.innerText;
+      loginBtn.innerText = "Loading... 🔄";
+
+      try {
+        await new Promise(res => setTimeout(res, 2000));
+        alert("Login Successful ✅");
+      } catch (err) {
+        alert("Login Failed ❌");
+      }
+
+      loginBtn.disabled = false;
+      loginBtn.innerText = originalText;
+    });
+  }
+
+});
+</script>
+
+
+<script>
+//  APPLY FORM LOGIC 
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Create modal dynamically (no UI change)
+  const modal = document.createElement("div");
+  modal.id = "apply-modal";
+  modal.style.position = "fixed";
+  modal.style.top = "0";
+  modal.style.left = "0";
+  modal.style.right = "0";
+  modal.style.bottom = "0";
+  modal.style.background = "rgba(0,0,0,0.6)";
+  modal.style.display = "none";
+  modal.style.alignItems = "center";
+  modal.style.justifyContent = "center";
+  modal.style.zIndex = "9999";
+
+  modal.innerHTML = `
+    <div style="background:#fff;padding:30px;border-radius:16px;width:400px;max-width:90%">
+      <h3 style="margin-bottom:15px">Apply Now</h3>
+
+      <input placeholder="First Name" id="fname" style="width:100%;margin-bottom:10px;padding:10px;border:1px solid #ddd;border-radius:8px" />
+      <input placeholder="Last Name" id="lname" style="width:100%;margin-bottom:10px;padding:10px;border:1px solid #ddd;border-radius:8px" />
+      <input placeholder="Phone Number" id="phone" style="width:100%;margin-bottom:10px;padding:10px;border:1px solid #ddd;border-radius:8px" />
+      <input placeholder="Email" id="email" style="width:100%;margin-bottom:10px;padding:10px;border:1px solid #ddd;border-radius:8px" />
+      <input placeholder="Current Qualification" id="qual" style="width:100%;margin-bottom:15px;padding:10px;border:1px solid #ddd;border-radius:8px" />
+
+      <button id="submit-apply" style="width:100%;padding:12px;background:#1a1464;color:#fff;border:none;border-radius:8px;cursor:pointer">Submit</button>
+      <button id="close-apply" style="margin-top:10px;width:100%;padding:10px;border:none;background:#eee;border-radius:8px;cursor:pointer">Cancel</button>
+    </div>
+  `;
+
+  document.body.appendChild(modal);
+
+ 
+  document.querySelectorAll(".cta-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      modal.style.display = "flex";
+    });
+  });
+  document.getElementById("close-apply").onclick = () => {
+    modal.style.display = "none";
+  };
+  document.getElementById("submit-apply").onclick = () => {
+    const fname = document.getElementById("fname").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+
+    if (!fname || !phone) {
+      alert("Please fill required fields");
+      return;
+    }
+    modal.style.display = "none";
+    alert("Application Submitted Successfully ✅");
+  };
+
+});
+</script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const descriptions = {
+    "IIM Ahmedabad": "IIM Ahmedabad is one of India's most prestigious management institutions, known for its rigorous academic curriculum and exceptional placement records. Established in 1961, it has consistently ranked as the top MBA college in India. The institute focuses on case-based learning, leadership development, and global exposure. Students benefit from world-class faculty, strong industry connections, and a collaborative campus culture. The campus infrastructure is designed to foster innovation and critical thinking. Graduates from IIM Ahmedabad are highly sought after by top multinational companies, consulting firms, and startups. The institute also encourages entrepreneurship through its incubation centers. With a strong alumni network spread across the globe, it offers unmatched career opportunities and lifelong professional connections. Overall, IIM Ahmedabad provides a transformative educational experience that shapes future business leaders.",
+
+    "IIT Madras": "IIT Madras is one of the premier engineering institutions in India, renowned for its academic excellence and research contributions. Established in 1959, it has consistently secured the top position in NIRF rankings. The institute offers a wide range of undergraduate, postgraduate, and doctoral programs in engineering, science, and technology. With state-of-the-art laboratories and research facilities, IIT Madras fosters innovation and cutting-edge research. The campus is located in Chennai and is known for its lush greenery and vibrant student life. Students participate in technical festivals, cultural events, and entrepreneurship initiatives. The institute maintains strong industry partnerships, ensuring excellent placement opportunities for graduates. Alumni of IIT Madras hold leadership positions in top global companies and startups. Overall, it provides a holistic learning environment that blends academic rigor with real-world applications.",
+
+    "IIT Bombay": "IIT Bombay is one of India's leading engineering institutes, known for its outstanding academic programs and global reputation. Established in 1958, it offers diverse courses across engineering, technology, and science disciplines. The institute emphasizes research, innovation, and interdisciplinary learning. Its campus in Mumbai provides students with exposure to industry and startup ecosystems. IIT Bombay hosts major technical and cultural festivals such as Techfest and Mood Indigo. The institute boasts excellent placement records with top companies recruiting students every year. Its faculty members are highly experienced and contribute significantly to research advancements. Students also benefit from strong alumni support and international collaborations. Overall, IIT Bombay provides an enriching educational experience that prepares students for leadership roles in technology and innovation.",
+
+    "NLSIU Bangalore": "NLSIU Bangalore is India's premier law university, consistently ranked as the top law school in the country. Established in 1987, it offers high-quality legal education through its rigorous curriculum and experienced faculty. The university focuses on developing analytical thinking, advocacy skills, and legal research expertise. Located in Bangalore, it provides students with exposure to courts, law firms, and corporate environments. Students actively participate in moot court competitions, debates, and internships. The institution has strong placement records with graduates securing positions in top law firms and multinational companies. Its alumni network includes distinguished legal professionals and policymakers. NLSIU emphasizes both academic excellence and practical training, ensuring students are well-prepared for legal careers.",
+
+    "IIT Delhi": "IIT Delhi is a leading engineering institute located in the national capital. Established in 1961, it is known for its strong academic programs and research initiatives. The institute offers a wide range of courses in engineering, technology, and sciences. IIT Delhi maintains strong ties with industries, providing students with excellent internship and placement opportunities. The campus features advanced research labs, modern infrastructure, and a vibrant student community. Students participate in technical festivals like Rendezvous and Tryst. The institute encourages innovation and entrepreneurship through incubation centers. Graduates from IIT Delhi are highly valued by employers worldwide. Overall, it provides a balanced environment for academic growth and career development.",
+
+    "IIM Bangalore": "IIM Bangalore is one of India's top business schools, known for its academic excellence and strong industry connections. Established in 1973, it offers world-class management programs. The institute focuses on leadership development, analytical skills, and global exposure. Located in Bangalore, it benefits from proximity to India's tech hub, providing students with numerous industry opportunities. The campus is equipped with modern facilities and fosters a collaborative learning environment. Students engage in case studies, internships, and live projects. The institute has excellent placement records with top companies recruiting graduates. Its alumni network is highly influential in corporate and entrepreneurial sectors. IIM Bangalore prepares students to become future leaders in business and management."
+  };
+
+  const modal = document.createElement("div");
+  modal.style.position = "fixed";
+  modal.style.top = "0";
+  modal.style.left = "0";
+  modal.style.right = "0";
+  modal.style.bottom = "0";
+  modal.style.background = "rgba(0,0,0,0.6)";
+  modal.style.display = "none";
+  modal.style.alignItems = "center";
+  modal.style.justifyContent = "center";
+  modal.style.zIndex = "9999";
+
+  modal.innerHTML = `
+    <div style="background:#fff;padding:30px;border-radius:16px;width:600px;max-width:90%;max-height:80vh;overflow:auto">
+      <h2 id="college-title" style="margin-bottom:10px;color:#1a1464"></h2>
+      <p id="college-desc" style="line-height:1.6;color:#444;font-size:14px"></p>
+      <button id="close-detail" style="margin-top:20px;padding:10px 20px;border:none;background:#1a1464;color:#fff;border-radius:8px;cursor:pointer">Close</button>
+    </div>
+  `;
+
+  document.body.appendChild(modal);
+
+  document.querySelectorAll(".college-card").forEach(card => {
+    card.addEventListener("click", (e) => {
+      if (e.target.classList.contains("cta-btn")) return;
+
+      const name = card.querySelector(".college-name")?.innerText;
+      if (!name || !descriptions[name]) return;
+
+      document.getElementById("college-title").innerText = name;
+      document.getElementById("college-desc").innerText = descriptions[name];
+
+      modal.style.display = "flex";
+    });
+  });
+
+  document.getElementById("close-detail").onclick = () => {
+    modal.style.display = "none";
+  };
+
+});
+</script>
+
+</body>
+</html>
